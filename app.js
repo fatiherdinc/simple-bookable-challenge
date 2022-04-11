@@ -2,7 +2,7 @@ const ical = require("node-ical");
 
 const events = ical.sync.parseFile("./events/ical.ics");
 
-getBookableDays(2022);
+console.log(getBookableDays(2022));
 
 function getAllDaysOfYear(year) {
     let dt = new Date(Date.UTC(year, 0, 1));
